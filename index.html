@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dunk Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <!--Logo-->
+              <a class="navbar-brand" href="#" style="color: #ff5900;">
+                <i class="fa-solid fa-xl fa-basketball d-inline-block align-text-top" alt="Logo" width="30" height="24" style="color: #ff5900; margin-top: 14px;"></i>
+                Dunk Blog
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--Nav Items-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria de Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <!--Nav Item disabled-->
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Em Breve: Jogadores</a>
+              </li>
+              <!--Dropdown Nav Item-->                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear" style="color: #ff5900;"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tema</a></li>
+                    <li><a class="dropdown-item" href="#">Idioma</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <!--Search Item-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="sidenav" id="sidenav">
+        <a class="side-menu active" href="#historia">História</a>
+        <a class="side-menu" href="#regras">Regras</a>
+        <a class="side-menu" href="#fundamentos">Fundamentos</a>
+        <a class="side-menu" href="#posicoes">Posições</a>
+        <a class="side-menu" href="#termos">Termos Relacionados</a>
+        <a class="side-menu" href="#nba">NBA</a>
+        <a class="side-menu" href="#basqueteBr">Basquete no Brasil</a>
+        <a class="side-menu" href="#basqueteOlimp">Basquete nas Olimpíadas</a>
+      </div>
+
+      <div class="all">
+        <div class="conteudo">
+          <div id="historia">
+            <h1>História do Basquete</h1>
+            <p>O basquete, um esporte amplamente amado e seguido em todo o mundo, teve seu início nos Estados Unidos em 1891, graças ao professor de Educação Física canadense <strong>James Naismith</strong>. Naismith estava lecionando na Associação Cristã de Moços de Springfield, Massachusetts, quando foi desafiado a criar um jogo que pudesse ser praticado durante os invernos rigorosos, em ambientes fechados, onde o frio extremo impedia os jovens de jogar ao ar livre. Sua missão era conceber um esporte que fosse facilmente adaptável, que incorporasse exercícios completos e, ao mesmo tempo, evitasse a violência comum em esportes como o futebol americano.</p>
+    
+            <p>Na busca por uma solução, Naismith imaginou um esporte com um alvo fixo, a cesta, onde uma bola deveria ser arremessada. Inicialmente, as cestas eram improvisadas com pêssegos, sem aberturas. A altura das cestas foi fixada em 3,05 metros, uma medida que permanece a oficial até hoje.</p>
+    
+            <p>Para garantir a justiça e o espírito esportivo, Naismith estabeleceu 13 regras originais para o jogo, que surpreendentemente permaneceram inalteradas por meio século. Curiosamente, nas regras iniciais, não era permitido quicar (driblar) a bola.</p>
+    
+            <p><strong>A primeira partida de basquete da história ocorreu em 21 de dezembro de 1891</strong>, consistindo em dois tempos de 15 minutos com nove jogadores em cada equipe.</p>
+    
+            <p>O esforço pioneiro de Naismith na criação do basquete logo se espalhou para o público feminino, graças à professora de Educação Física Senda Berenson Abbott. Ela introduziu o esporte para mulheres no Smith College, nos Estados Unidos, em 1892, até mesmo trocando ideias com o próprio Naismith para aprimorar a prática.</p>
+    
+            <img src="img/basquete-feminino.webp" class="basquete-fem" alt="Basquete Feminino">
+    
+            <p>Embora tenha levado alguns anos, o basquete finalmente encontrou seu caminho para os Jogos Olímpicos, sendo apresentado como esporte de demonstração em 1904, em Saint Louis, Missouri, nos Estados Unidos. No entanto, a inclusão oficial nas Olimpíadas só aconteceria 32 anos depois, em Berlim, Alemanha.</p>
+    
+            <p>A FIBA (Federação Internacional de Basquetebol), criada em junho de 1932 e sediada em Mies, Suíça, desempenha um papel fundamental na organização e regulamentação do basquete em todo o mundo.</p>
+    
+            <p>Nos Estados Unidos, as quadras de basquete se tornaram palcos importantes na luta da comunidade negra por direitos e igualdade. Vários atletas negros se destacaram e se tornaram ícones do esporte, incluindo Kareem Abdul-Jabbar, Bill Russell, Wilt Chamberlain, Magic Johnson, Kobe Bryant, LeBron James e Michael Jordan, considerado por muitos como o maior jogador de basquete da história.</p>
+    
+            <p>O basquete americano também consolidou uma forte conexão com a cultura popular, particularmente com o hip-hop e o R&B. Essa relação única entre o esporte e a cultura popular inspirou várias obras cinematográficas, como "Space Jam", "Homens Brancos Não Sabem Enterrar" e "Coach Carter".</p>
+            </div>
+
+          <div id="regras">
+            <h1>Regras do Basquete</h1>
+            <p>O basquete é um esporte praticado por duas equipes, cada uma composta por cinco jogadores em quadra. Os objetivos do jogo são bem definidos:</p>
+    
+            <p>No ataque, a equipe busca arremessar a bola na cesta do time adversário, tentando encestar o maior número de vezes possível durante a partida.
+    
+            Na defesa, o objetivo é impedir que a equipe adversária realize um ataque bem-sucedido, bloqueando os arremessos e recuperando a posse da bola.
+            </p>
+    
+            <p>As dimensões da quadra de basquete são padronizadas, medindo 28 metros de comprimento por 15 metros de largura. As cestas estão fixadas em estruturas a uma altura de 3,05 metros em cada extremidade da quadra.</p>
+    
+            <img src="img/1-quadra-basquete.webp" class="quadra alt="quadra">
+    
+            <p>As partidas de basquete geralmente são divididas em quatro tempos de 10 minutos cada, com uma exceção notável na NBA, o maior campeonato de equipes dos Estados Unidos, onde cada quarto dura 12 minutos.</p>
+    
+            <p>Uma característica única do basquete é a restrição que os jogadores têm em relação ao deslocamento com a bola. Eles só podem avançar com a bola quicando-a no chão, conhecido como driblar, e não podem dar mais de dois passos sem quicar a bola. </br>
+            A pontuação no basquete varia de acordo com a situação de ataque:
+            </p>
+    
+            <ul>
+              <li>1 ponto: é concedido por arremessos bem-sucedidos em situações de lance livre.</li>
+              <li>2 pontos: são marcados por cestas convertidas em condições normais de jogo.</li>
+              <li>3 pontos: são obtidos quando um arremesso é executado de uma distância considerável, antes da linha dos três pontos, situada a 6,2 metros da cesta.</li>
+            </ul>
+    
+            <p>As faltas no basquete são comuns e podem resultar em lances livres para a equipe adversária. Situações consideradas faltas incluem:</p>
+    
+            <ul>
+              <li>Um jogador dar mais de dois passos sem quicar a bola.</li>
+              <li>Um jogador segurar a bola por mais de cinco segundos sem arremessá-la, seja para a cesta ou para um companheiro de equipe.</li>
+              <li>Um jogador permanecer mais de três segundos na área do garrafão.</li>
+              <li>Tocar no braço e na mão de um jogador que estiver com a bola, resultando em uma falta pessoal.</li>
+            </ul>
+  
+          </div>
+
+          <div id="fundamentos">
+            <h2>Fundamentos do Basquete</h2>
+            <p>O basquete é um esporte que se baseia em cinco fundamentos essenciais que desempenham um papel fundamental em cada partida:</p>
+    
+            <ul>
+              <li><strong>Passe:</strong> O passe é a ação de lançar a bola para um companheiro de equipe. Existem várias maneiras de realizar um passe, incluindo o passe de peito, onde a bola é empurrada com ambas as mãos em direção ao destinatário; o passe com uma das mãos; o passe quicado, onde a bola é quicada no chão antes de chegar ao destinatário; o passe por cima do ombro; e o passe por cima da cabeça. O passe de peito é o mais comum e é conhecido por sua velocidade e trajetória linear. Trocar passes é essencial para avançar no campo e ganhar vantagem tática.</li>
+              <li><strong>Drible:</strong> O drible é a ação de quicar a bola no chão enquanto um jogador se move com ela. O drible é usado para superar um defensor e se aproximar da cesta ou para posicionar-se estrategicamente na quadra. É um movimento que requer coordenação motora e habilidade no controle da bola.</li>
+              <li><strong>Arremesso:</strong> O arremesso é o elemento-chave do basquete, no qual o jogador lança a bola em direção à cesta com o objetivo de marcar pontos. Existem vários tipos de arremessos, incluindo a bandeja, onde a bola é arremessada na tabela antes de cair na cesta, e o gancho, um arremesso executado próximo à tabela com uma das mãos.</li>
+              <li><strong>Rebote:</strong> O rebote é a ação de pegar a bola depois que outro jogador erra um arremesso. Os rebotes podem ser de ataque, onde a equipe recupera a posse da bola após um arremesso mal-sucedido, ou de defesa, quando a equipe adversária tenta arremessar, mas a equipe defensora pega a bola. O rebote é uma situação crucial no jogo e pode levar a contra-ataques ou a manutenção da posse da bola.</li>
+              <li><strong>Lance Livre:</strong> O lance livre é um arremesso sem marcação que ocorre após uma falta ser cometida ou quando a equipe atinge o limite de cinco faltas em um determinado período do jogo. Os jogadores têm a oportunidade de marcar pontos sem defensores próximos durante os lances livres.</li>
+            </ul>
+    
+            <p>Esses cinco fundamentos são fundamentais para o sucesso no basquete e são praticados repetidamente pelos jogadores em treinamentos e partidas. Eles formam a base do jogo e influenciam diretamente o desempenho de uma equipe em quadra.</p>
+          </div>
+          
+          <div id="posicoes">
+            <h3>Posições e Funções do Basquete</h3>
+            <p>No basquete, as posições dos jogadores desempenham papéis específicos e têm características distintas que contribuem para o sucesso da equipe. Aqui estão as características de cada posição:</p>
+    
+            <ul>
+              <li><strong>Armador (ou Ala Esquerda):</strong> O armador é frequentemente o jogador com as melhores habilidades de dribles e passes da equipe. Sua função principal é coordenar o ataque, distribuindo passes para os companheiros de equipe e iniciando jogadas. Eles são frequentemente referidos como "ala esquerda" devido à sua posição na quadra.</li>
+              <li><strong>Lançador (ou Escolta):</strong> O lançador, também conhecido como escolta, é tipicamente o melhor arremessador da equipe. Eles são responsáveis por marcar pontos, seja através de arremessos de média ou longa distância, e também desempenham um papel defensivo importante, tentando bloquear o armador adversário e ganhar espaço para seus próprios arremessos.</li>
+              <li><strong>Ala/Pivô:</strong> Esta posição é caracterizada por jogadores que atuam próximos à cesta. O ala/pivô se movimenta para desmarcar-se e receber a bola em situações de arremesso intermediário. Além disso, eles costumam ser bons pegadores de rebotes, contribuindo para a manutenção da posse de bola.</li>
+              <li><strong>Ala/Lateral:</strong> O ala/lateral é frequentemente o jogador mais versátil da equipe. Eles possuem equilíbrio entre habilidades de arremesso e movimentação na quadra. Geralmente, são melhores arremessadores do que os pivôs e, em termos de altura, tendem a ser mais baixos que os jogadores da posição de pivô.</li>
+              <li><strong>Pivô (ou Central):</strong> O pivô é, em geral, o jogador mais alto da equipe. Sua função principal é criar oportunidades de arremesso próximo à cesta, aproveitando sua altura para marcar pontos de forma eficaz. Na defesa, o pivô busca bloquear os arremessos adversários e pegar rebotes, contribuindo para manter a posse de bola e iniciar jogadas ofensivas.</li>
+            </ul>
+    
+            <p>Cada posição desempenha um papel específico na equipe e requer habilidades únicas. A combinação de diferentes posições e jogadores com suas habilidades individuais é essencial para o sucesso de uma equipe de basquete.</p>
+          </div>
+          
+          <div id="termos">
+            <h1>Termos relacionados às jogadas de basquete</h1>
+            <p>No basquete, diversos termos e jogadas têm significados específicos que ajudam a descrever o jogo e suas ações. Aqui estão alguns desses termos:</p>
+    
+            <ul>
+              <li><strong>Assistência:</strong> Refere-se ao passe dado por um jogador que resulta em uma cesta imediatamente após o recebimento da bola por um companheiro de equipe.</li>
+              <li><strong>Roubo de Bola:</strong> Ocorre quando um jogador consegue desarmar um adversário e recuperar a posse da bola, geralmente após um drible malsucedido por parte do adversário.</li>
+              <li><strong>Enterrada:</strong> Uma jogada emocionante em que um jogador "crava" a bola diretamente na cesta do adversário sem a necessidade de um arremesso. É muitas vezes exibida com estilo e habilidade atlética.</li>
+              <li><strong>Ponte Aérea:</strong> Envolve um passe alto de um jogador para um companheiro de equipe, que pega a bola enquanto está no ar e a coloca na cesta. É uma jogada espetacular que demonstra coordenação entre os jogadores.</li>
+              <li><strong>Toco:</strong> Uma jogada defensiva em que um jogador bloqueia o arremesso do adversário enquanto a bola está em ascensão. O bloqueio impede que a bola chegue à cesta, evitando um ponto do adversário.</li>
+              <li><strong>Duplo-Duplo:</strong> Quando um jogador alcança números sólidos em pelo menos dois aspectos do jogo, como pontos, rebotes ou assistências. Por exemplo, um jogador que registra 10 pontos e 12 rebotes em uma partida alcançou um duplo-duplo.</li>
+              <li><strong>Triplo-Duplo:</strong> É um desempenho notável em que um jogador atinge números consideráveis em três categorias diferentes do jogo durante uma partida. Isso geralmente envolve 10 ou mais pontos, 10 ou mais rebotes e 10 ou mais assistências.</li>
+            </ul>
+    
+            <p>Esses termos são fundamentais para a descrição e análise do basquete, tornando o jogo mais compreensível e emocionante para os fãs e os jogadores. Eles capturam momentos cruciais e a diversidade de habilidades envolvidas no esporte.</p>
+          </div>
+
+          <div id="nba">
+            <h1>A NBA, a Maior Liga de Basquete do Mundo</h1>
+            <p>A  National Basketball Association (NBA), a maior liga de basquete do mundo, foi fundada em 1946 e realizou sua primeira partida no mesmo ano entre o Toronto Huskies e o New York Knicks. Atualmente, a NBA consiste em 30 equipes, sendo 29 dos Estados Unidos e uma equipe representando o Canadá, o Toronto Raptors. As equipes são divididas geograficamente em duas conferências, a Conferência Leste e a Conferência Oeste, cada uma com 15 times. A NBA é um dos eventos esportivos mais lucrativos dos Estados Unidos, com receitas que já ultrapassaram os US$ 8 bilhões, atraindo a atenção de uma ampla base de fãs, inúmeras transmissões de mídia e investidores do ramo esportivo. Os maiores campeões da história da liga são o Los Angeles Lakers e o Boston Celtics, cada um com 17 títulos.</p>
+          </div>
+  
+          <div id="basqueteBr">
+            <h1>Basquete no Brasil</h1>
+            <p>O basquete chegou ao Brasil em 1896, introduzido pelo missionário americano Augusto Shaw, que o implantou no Colégio Mackenzie, em São Paulo. No início, as mulheres demonstraram maior interesse pelo esporte, enquanto os homens tinham uma predileção mais forte pelo futebol. As Associações Cristãs de Moços desempenharam um papel importante na prática do basquete. O primeiro torneio de basquete no Brasil ocorreu no Rio de Janeiro em 1912. Em 1915, as regras do basquete foram traduzidas para o português, permitindo uma compreensão mais ampla do esporte e sua disseminação pelo país. Escolas e clubes passaram a adotar o basquete como uma prática esportiva. Em 1922, a Seleção Brasileira de Basquete foi convocada para seu primeiro torneio internacional, vencendo-o sob a liderança do treinador dos Estados Unidos, Fred Brown. Em 1933, a Federação Brasileira de Basketball, atual Confederação Brasileira de Basquetebol (CBB), foi fundada no Rio de Janeiro. Oscar Schmidt, conhecido como "Mão Santa," é o destaque brasileiro no basquete e é considerado o maior pontuador da história do esporte, com um total de 49.703 pontos em 1.613 jogos.</p>
+  
+          </div>
+  
+          <div id="basqueteOlimp">
+            <h1>Basquete nas Olimpíadas</h1>
+            <p>O basquete estreou como esporte de exibição nas Olimpíadas de Saint Louis, em 1904, mas só foi oficialmente incluído no programa olímpico em 1936, nos Jogos de Berlim. Os Estados Unidos foram campeões em todas as edições até 1972, quando a União Soviética interrompeu a sequência de vitórias americanas. Os Estados Unidos mantêm o recorde com 16 títulos olímpicos no basquete masculino, seguidos apenas pela Iugoslávia, Argentina e União Soviética, que também conquistaram ouros. A equipe masculina do Brasil conquistou três medalhas de bronze, com a última em 1964, em Tóquio. O basquete feminino fez sua estreia olímpica nas Olimpíadas de Montreal, em 1976, com os Estados Unidos conquistando nove títulos, enquanto a União Soviética conquistou dois ouros. A equipe feminina do Brasil ganhou uma medalha de prata em 1996 e uma de bronze em 2000, com Hortência sendo uma das maiores atletas do basquete feminino.</p>
+          </div>
+        </div>
+        </br>
+  
+        <div class="container text-center">
+          <div class="row row-cols-3">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/enterrada.png" class="card-img-top" alt="Card - Enterrada">
+                <div class="card-body">
+                  <h5 class="card-title">História das Enterradas Marcantes</h5>
+                  <p class="card-text"> Explore as enterradas mais incríveis da história do basquete, momentos memoráveis em que jogadores voaram pelos ares para cravar a bola na cesta. Descubra como essas jogadas espetaculares mudaram o jogo e emocionaram os fãs.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/lesoes.jpg" class="card-img-top" alt="Card - Lesões">
+                <div class="card-body">
+                  <h5 class="card-title">Lesões e Recuperação de Jogadores</h5>
+                  <p class="card-text">Saiba mais sobre as lesões que afetaram alguns dos maiores jogadores de basquete e como eles se recuperaram. Esteja por dentro das histórias de superação e das reviravoltas emocionantes que esses atletas enfrentaram em sua jornada de retorno às quadras.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/estatisticas.png" class="card-img-top" alt="Card - Estatísticas">
+                <div class="card-body">
+                  <h5 class="card-title">Estatísticas Avançadas no Basquete</h5>
+                  <p class="card-text">Entre nos bastidores das estatísticas avançadas do basquete, e descubra como os números podem revelar insights surpreendentes sobre o desempenho dos jogadores e equipes. Aprenda como as métricas avançadas estão moldando o jogo moderno.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/impacto.jpg" class="card-img-top" alt="Card - Impacto da NBA">
+                <div class="card-body">
+                  <h5 class="card-title">O Impacto Social dos Jogadores da NBA</h5>
+                  <p class="card-text">Explore o impacto social e ativismo dos jogadores da NBA fora das quadras. Descubra como esses atletas usam suas vozes e plataformas para criar mudanças significativas na sociedade e na comunidade.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/rivalidades.jpg" class="card-img-top" alt="Card - Rivalidades">
+                <div class="card-body">
+                  <h5 class="card-title">História das Grandes Rivalidades da NBA</h5>
+                  <p class="card-text">Reviva as rivalidades mais intensas e icônicas da história da NBA. Saiba mais sobre os confrontos épicos entre equipes e jogadores que moldaram o caminho do basquete profissional.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/treinador.jpg" class="card-img-top" alt="Card - Treinadores">
+                <div class="card-body">
+                  <h5 class="card-title">Treinadores e Sua Influência no Jogo</h5>
+                  <p class="card-text">Analise o papel crucial dos treinadores no basquete e como suas estratégias e liderança moldam o desempenho das equipes. Conheça as mentes por trás das jogadas vitoriosas e dos campeonatos memoráveis.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <footer>
+          
+        </footer>
+      </div>
+      
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
