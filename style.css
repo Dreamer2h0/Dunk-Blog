@@ -74,10 +74,11 @@
 @media screen and (max-height: 600px) {
   .sidenav {display: none;}
   #container-fluid, .all {margin-right: 0px;}
-  .col > .card {width: 12rem !important;}
+  .col > .card {width: 10rem !important;}
+  .card-body > .card-text {display: none;}
   .conteudo .basquete-img1, .basquete-img2 {
     width: 400px;
-    margin-left: 18%;
+    margin-left: auto;
     padding: 16px;
   }
 }
