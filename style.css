@@ -77,7 +77,7 @@
   .col > .card {width: 8rem !important;}
   .card-body > .card-text {display: none !important;}
   .conteudo .basquete-img1, .basquete-img2 {
-    width: 200px;
+    width: 200px !important;
     margin-left: auto !important;
     padding: 16px;
   }
