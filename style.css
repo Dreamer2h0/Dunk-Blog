@@ -62,7 +62,7 @@
 }
 
 .col > .card {
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 .card-text {
@@ -75,10 +75,10 @@
   .sidenav {display: none;}
   #container-fluid, .all {margin-right: 0px;}
   .col > .card {width: 10rem !important;}
-  .card-body > .card-text {display: none;}
+  .card-body > .card-text {display: none !important;}
   .conteudo .basquete-img1, .basquete-img2 {
     width: 400px;
-    margin-left: auto;
+    margin-left: auto !important;
     padding: 16px;
   }
 }
