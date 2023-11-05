@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'old-school';
+  src: url('font/old_school_united_stencil/old_school_united_stencil.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'old-school';
+  src: url('font/old_school_united_stencil/old_school_united_stencil_italic.ttf');
+  font-style: italic;
+}
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -33,6 +44,12 @@
   margin-right: 160px;
 }
 
+.logo {
+  font-family: 'old-school';
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
 #navbarSupportedContent .active {
   color: #ff5900;
 }
@@ -53,7 +70,7 @@
 
 .conteudo .basquete-img1, .basquete-img2 {
   width: 400px;
-  margin-left: 35%;
+  margin-left: 33%;
   padding: 16px;
 }
 
@@ -71,14 +88,16 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 460px) {
   .sidenav {display: none;}
-  #container-fluid, .all {margin-right: 0px;}
+  .conteudo {width: 100%; margin: 0px; padding: 0 12px 0 12px;}
+  #container-fluid, .all {margin: 0px;}
   .col > .card {width: 8rem !important;}
+  .card-body > .card-title {font-size: 0.65rem;}
   .card-body > .card-text {display: none !important;}
   .conteudo .basquete-img1, .basquete-img2 {
-    width: 200px !important;
-    margin-left: auto !important;
+    width: 250px !important;
+    margin-left: 20% !important;
     padding: 16px;
   }
 }
