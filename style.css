@@ -1,104 +1,31 @@
-@font-face {
-  font-family: 'old-school';
-  src: url('font/old_school_united_stencil/old_school_united_stencil.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'old-school';
-  src: url('font/old_school_united_stencil/old_school_united_stencil_italic.ttf');
-  font-style: italic;
+body {
+    font-family: 'Poppins', sans-serif;;
 }
 
-/* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+.lead {
+    font-weight: 500;
+    color: rgba(0, 0, 0, .6);
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 12px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
+article > p {
+    text-align: justify;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.blockquote {
+    font-weight: 600;
+    font-style: italic;
 }
 
-.sidenav .active {
-  color: #ff5900;
+.article-img {
+    border-radius: 20px;
+    border: 3px solid #ff5900;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, .8);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#container-fluid {
-  margin-right: 160px;
-}
-
-.logo {
-  font-family: 'old-school';
-  font-style: italic;
-  font-size: 1.5rem;
-}
-
-#navbarSupportedContent .active {
-  color: #ff5900;
-}
-
-.all{
-  margin-right: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-.conteudo {
-  margin: 0 81.5px 0 81.5px;
-  padding: 0 12px 0 12px;
-}
-
-.conteudo p {
-  text-align: justify;
-  text-indent: 12px;
-}
-
-.conteudo .basquete-img1, .basquete-img2 {
-  width: 400px;
-  margin-left: 33%;
-  padding: 16px;
-  border-radius: 35px;
-}
-
-.col {
-  margin-bottom: 16px;
-}
-
-.col > .card {
-  margin-left: auto !important;
-}
-
-.card-text {
-  text-align: justify;
-  text-indent: 12px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 460px) {
-  .sidenav {display: none;}
-  .conteudo {width: 100%; margin: 0px; padding: 0 12px 0 12px;}
-  #container-fluid, .all {margin: 0px;}
-  .col > .card {width: 8rem !important;}
-  .card-body > .card-title {font-size: 0.65rem;}
-  .card-body > .card-text {display: none !important;}
-  .conteudo .basquete-img1, .basquete-img2 {
-    width: 250px !important;
-    margin-left: 20% !important;
-    padding: 16px;
-  }
+figure {
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
 }
