@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--Header-->
+    <!--navbar start-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" id="container-fluid">
           <nav class="navbar bg-body-tertiary">
@@ -36,7 +36,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="videos.html">Vídeos</a>
+                <a class="nav-link" href="#">Vídeos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Galeria de Fotos</a>
@@ -70,22 +70,27 @@
           </div>
         </div>
     </nav>
+    <!--navbar end-->
+
     <main class="container">
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-            <div class="col-lg-6 px-0">
-                <h1 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-style: italic;" class="display-4 fst-italic">
-                    NBA: Lakers Perde Para o HEAT e Anthony Davis Deixa a Quadra Lesionado
-                </h1>
-                <p class="lead my-3">
-                    Na noite emocionante da NBA, os Lakers sofrem uma derrota surpreendente para o Heat, enquanto Anthony Davis deixa a quadra lesionado, deixando os fãs preocupados com o futuro da equipe.
-                </p>
-                <p class="lead mb-0">
-                    <a href="#" class="text-body-emphasis fw-bold">Continue reading...</a>
-                </p>
+            <div class="col-lg-6 px-0 main-img">
+                <div class="main-text">
+                    <h1 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-style: italic;" class="display-4 fst-italic">
+                        NBA: Lakers Perde Para o HEAT e Anthony Davis Deixa a Quadra Lesionado
+                    </h1>
+                    <p class="lead my-3">
+                        Na noite emocionante da NBA, os Lakers sofrem uma derrota surpreendente para o Heat, enquanto Anthony Davis deixa a quadra lesionado, deixando os fãs preocupados com o futuro da equipe.
+                    </p>
+                    <p class="lead mb-0">
+                        <a href="#" class="text-body-emphasis fw-bold">Continue reading...</a>
+                    </p>
+                </div>
+                <img src="img/anthony-davis.jpg" alt="">
             </div>
         </div>
         <div class="row mb-2">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">
@@ -104,7 +109,7 @@
                       </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">
@@ -124,6 +129,8 @@
                 </div>
             </div>
         </div>
+
+        <!--articles start-->
         <div class="row g-5">
             <div class="col-md-8">
                 <article class="blog-post">
@@ -163,7 +170,7 @@
                     </blockquote>
 
                     <figure>
-                        <img class="article-img" src="img/toco.png" alt="Toco-Wembanyama">
+                        <img style="width: 728px;" class="article-img" src="img/toco.png" alt="Toco-Wembanyama">
                         <figcaption>
                             Em outro lance parecido, Dennis Schroder leva toco de Wembanyama — Foto: Reuters
                         </figcaption>
@@ -195,7 +202,7 @@
                     </ul>
 
                     <figure>
-                        <img class="article-img" src="img/porradaria.png" alt="caos">
+                        <img style="width: 728px;" class="article-img" src="img/porradaria.png" alt="caos">
                         <figcaption>
                             Draymond Green após pancada nas partes íntimas em jogo na NBA — Foto: Reprodução
                         </figcaption>
@@ -225,7 +232,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th>1 Celtics</th>
+                                <th>Celtics</th>
                                 <th>5</th>
                                 <th>1</th>
                                 <th>.833</th>
@@ -243,6 +250,7 @@
 
             </div>
         </div>
+        <!--articles end-->
     </main>
       
     <script src="script.js"></script>
