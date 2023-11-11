@@ -1,5 +1,21 @@
+@font-face {
+    font-family: 'old-school';
+    src: url('fonts/old_school_united_stencil.ttf'),
+         url('fonts/old_school_united_stencil_italic.ttf');
+}
+
 body {
     font-family: 'Poppins', sans-serif;;
+}
+
+.logo {
+    font-family: 'old-school';
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.nav-item > .active {
+    color: #ff5900 !important;
 }
 
 .lead {
