@@ -45,3 +45,19 @@ figure {
     font-size: smaller;
     text-align: center;
 }
+
+/*Menu videos*/
+.custom-bg {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;  /* Define a cor do texto para branco */
+    width: fit-content;  /* Ajusta a largura ao conteúdo do texto */
+    padding: 10px;  /* Adiciona um preenchimento para melhor legibilidade */
+}
+
+#meuSlider{
+    border-radius: 15px;
+    border: 3px solid #ff5900;
+}
+#meuSlider.carousel img {
+    border-radius: 15px;
+}
