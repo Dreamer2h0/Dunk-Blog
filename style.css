@@ -62,104 +62,68 @@ figure {
     border-radius: 15px;
 }
 
-.card {
-    width: 190px;
-    background: #ffffff;
-    padding: .4em;
-    border-radius: 6px;
-    margin-right: 2rem;
-  }
+.flexible-row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .card:hover {
-    cursor: pointer;
-    scale: 1.05;
-  }
-  
-  .card-image {
-    background-color: #ececec;
-    width: 100%;
-    height: 130px;
-    border-radius: 6px 6px 0 0;
-  }
+.card-video {
+  width: 300px;
+  height: 284.78px;
+  background: #ffffff;
+  padding: .4em;
+  border-radius: 6px;
+  margin-right: 2rem;
+}
 
-  .lebron {
-    background-image: url('img/lebron-james-icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.card-videos {
+  background-color: #ececec;
+  width: 300px;
+  height: 168.7px;
+  border-radius: 15px;
+}
 
-  .kevinDurant {
-    background-image: url('img/kevin-durant-icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.heading-videos {
+  font-weight: 600;
+  color: #6b6b6b;
+  padding: 7px;
+  padding-top: 10px;
+}
 
-  .stephenCurry {
-    background-image: url('img/stephen-curry-icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.heading-videos:hover {
+  cursor: pointer;
+}
 
-  .kobeBryant {
-    background-image: url('img/kobe-bryant-icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .category {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: #ff5900;
-    padding: 10px 7px 0;
-  }
-  
-  .category:hover {
-    cursor: pointer;
-  }
-  
-  .heading {
-    font-weight: 600;
-    color: #6b6b6b;
-    padding: 7px;
-  }
-  
-  .heading:hover {
-    cursor: pointer;
-  }
-  
-  .author {
-    color: #525252;
-    font-weight: 400;
-    font-size: 11px;
-    padding-top: 20px;
-  }
-  
-  .name {
-    font-weight: 600;
-  }
-  
-  .name:hover {
-    cursor: pointer;
-  }
-  
-  .flex-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.author {
+  color: #525252;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .flexible-row {
+    justify-content: center; /* Centraliza os vídeos em dispositivos móveis */
   }
 
   .card-video {
-    width: 311px;
-    background: #ffffff;
-    padding: .4em;
-    border-radius: 6px;
-    margin-right: 2rem;
+    width: 100%;
+    max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
+    margin-right: 0; /* Remove a margem direita */
+    margin-bottom: 2rem; /* Mantém a margem inferior para espaçamento */
   }
 
-  .card-videos {
-    background-color: #ececec;
-    width: 311px;
-    height: 175px;
-    border-radius: 6px 6px 0 0;
+  .card-videos, iframe {
+    width: 100%;
+    max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
+    height: auto;
   }
+}
