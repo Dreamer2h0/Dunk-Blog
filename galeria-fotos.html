@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dunk Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="topo">
+        <div class="container-fluid" id="container-fluid">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <!--Logo-->
+              <a class="navbar-brand" href="index.html" style="color: #ff5900;">
+                <i class="fa-solid fa-xl fa-basketball d-inline-block align-text-top" alt="Logo" width="30" height="24" style="color: #ff5900; margin-top: 14px;"></i>
+                <span class="logo">Dunk Blog</span>
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--Nav Items-->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="videos.html">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Galeria de Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <!--Nav Item disabled-->
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Em Breve: Jogadores</a>
+              </li>
+              <!--Dropdown Nav Item-->                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear" style="color: #ff5900;"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tema</a></li>
+                    <li><a class="dropdown-item" href="#">Idioma</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <!--Search Item-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <main class="container">
+      <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;" class="mb-3">Momentos Marcantes</h3>
+
+      <div class="gallery">
+        <img src="img/fim-da-carreira-de-jordan-no-bulls.jpg">
+        <img src="img/100-wilt-chamberlain.jpg">
+        <img src="img/dr-chegou.jpg">
+        <img src="img/heatles-nas-alturas.jpg">
+        <img src="img/jerry-west-pose.jpg">
+        <img src="img/jordan-voa.jpg">
+        <img src="img/kobe-e-shaq.jpg">
+        <img src="img/kobe-enterra-de-costas.jpg">
+        <img src="img/lagrimas-do-maior.jpg">
+        <img src="img/lebron-james-cleveland.jpg">
+        <img src="img/ray-allen-corda-amarela.jpg">
+        <img src="img/vinsanity.jpg">
+        <img src="img/bird-vs-magic.jpg">
+      </div>
+      
+    </main>
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+            <p>
+                Blog feito por <a href="https://www.instagram.com/gabd.uart/" target="_blank">Gabriel</a>.
+            </p>
+            <p class="mb-0">
+                <a href="#topo">voltar ao topo</a>
+            </p>
+    </footer>
+      
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const gallery = document.querySelector('.gallery');
+        const images = gallery.querySelectorAll('img');
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox');
+        document.body.appendChild(lightbox);
+
+        images.forEach(img => {
+          img.addEventListener('click', function () {
+            // Exibir a imagem clicada no lightbox
+            const imgClone = img.cloneNode();
+            lightbox.innerHTML = ''; // Limpar conteúdo anterior
+            lightbox.appendChild(imgClone);
+            lightbox.style.display = 'flex';
+          });
+        });
+
+        // Fechar o lightbox ao clicar fora da imagem
+        lightbox.addEventListener('click', function () {
+          lightbox.style.display = 'none';
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

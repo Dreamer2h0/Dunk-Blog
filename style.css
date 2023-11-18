@@ -116,6 +116,7 @@ figure {
 
   .card-video {
     width: 100%;
+    height: 354px;
     max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
     margin-right: 0; /* Remove a margem direita */
     margin-bottom: 2rem; /* Mantém a margem inferior para espaçamento */
@@ -124,6 +125,46 @@ figure {
   .card-videos, iframe {
     width: 100%;
     max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
-    height: auto;
+    height: 214px;
   }
+}
+
+/*Menu galeria de fotos*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  align-self: start;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Lightbox (inicialmente escondido) */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
 }
