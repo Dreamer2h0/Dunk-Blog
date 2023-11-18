@@ -40,10 +40,10 @@
                 <a class="nav-link" href="videos.html">Vídeos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Galeria de Fotos</a>
+                <a class="nav-link active" href="galeria-fotos.html">Galeria de Fotos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="contato.html">Contato</a>
               </li>
               <!--Nav Item disabled-->
               <li class="nav-item">
@@ -73,7 +73,7 @@
     <main class="container">
       <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;" class="mb-3">Momentos Marcantes</h3>
 
-      <div class="gallery">
+      <div class="gallery mb-3">
         <img src="img/fim-da-carreira-de-jordan-no-bulls.jpg">
         <img src="img/100-wilt-chamberlain.jpg">
         <img src="img/dr-chegou.jpg">
@@ -87,6 +87,8 @@
         <img src="img/ray-allen-corda-amarela.jpg">
         <img src="img/vinsanity.jpg">
         <img src="img/bird-vs-magic.jpg">
+        <img src="img/jordan-bulls.jpg">
+        <img src="img/shaquille-oneal-lakers.jpg">
       </div>
       
     </main>
@@ -114,13 +116,22 @@
             const imgClone = img.cloneNode();
             lightbox.innerHTML = ''; // Limpar conteúdo anterior
             lightbox.appendChild(imgClone);
+
+            // Adicionar botão "X" ao lightbox
+            const closeButton = document.createElement('button');
+            closeButton.innerHTML = '&times;'; // Código HTML para o caractere "X"
+            closeButton.classList.add('close-button');
+            lightbox.appendChild(closeButton);
+
             lightbox.style.display = 'flex';
           });
         });
 
-        // Fechar o lightbox ao clicar fora da imagem
-        lightbox.addEventListener('click', function () {
-          lightbox.style.display = 'none';
+        // Fechar o lightbox ao clicar no botão "X"
+        document.addEventListener('click', function (event) {
+          if (event.target.classList.contains('close-button')) {
+            lightbox.style.display = 'none';
+          }
         });
       });
     </script>

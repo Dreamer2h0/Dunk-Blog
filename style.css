@@ -46,6 +46,8 @@ figure {
     text-align: center;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+
 /*Menu videos*/
 .custom-bg {
     background: rgba(0, 0, 0, 0.8);
@@ -129,6 +131,9 @@ figure {
   }
 }
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
 /*Menu galeria de fotos*/
 
 .gallery {
@@ -168,3 +173,19 @@ figure {
   max-height: 90%;
   border-radius: 8px;
 }
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Menu Contato*/
+
