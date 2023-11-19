@@ -6,7 +6,7 @@ Imagem ++
 Bootstrap ++
 CSS ++
 Formulário ++
-Mapa de Imagens --
+Mapa de Imagens ++
 Iframe ++
 Cores, Fontes ++
 Marcadores ++
