@@ -1,14 +1,14 @@
-5 Páginas
+5 Páginas ++
 
-Tabela --
+Tabela ++
 Links ++
 Imagem ++
 Bootstrap ++
 CSS ++
-Formulário --
+Formulário ++
 Mapa de Imagens --
-Iframe --
+Iframe ++
 Cores, Fontes ++
 Marcadores ++
 Linha, Movimento --
-Grid/Js --
+Grid/Js ++
